@@ -1,11 +1,14 @@
 package exercise1;
 
-public abstract class Employee {
+import exercise2.Payable ;
+
+public abstract class Employee implements Payable {
 
 	String name ;
 	int numberHours = 0 ;
 	int quantitySell = 0 ;
 
+	@Override
 	public abstract int computeSalary();
 
 	public Employee (String name) {
